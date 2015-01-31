@@ -91,16 +91,16 @@ section button{
 	width:6vh;
 	height:6vh;
 	background-size: contain;
-	position:relative;
+	position:absolute;
 	left:48.5vw;
-	top:23vh;
+	top:85vh;
 	transition: width ease 1s, height ease 1s, top 1s, left ease 1s;
 
 }
 section button:hover{
 	width:7vh;
 	height: 7vh;
-	top:25vh;
+	top:87vh;
 	left:48.25vw;
 }
 section button a{

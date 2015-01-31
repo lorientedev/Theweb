@@ -44,9 +44,15 @@ var body = window.document.getElementById("cuerpo");
 	   tecnology.style.color = "white";
 	   count=0;
 	}
+	function CheckBottom(){
+		
+		if (window.screen.scrollY == wh){
+			secondarticle();
+		}
+	}
 
 </script>
-<body  id="cuerpo" >
+<body  id="cuerpo" onscroll="CheckBottom()">
 
 <section id="main">
 	<header>
@@ -99,7 +105,7 @@ var body = window.document.getElementById("cuerpo");
 
 			<div id="tecnology"><img src="htmlcsslogos.svg"/><br>
 			<h3>A la ultima</h3>
-			<p>El mundo de las web esta en continuo cambio por eso en ODY nos actualizamos frecuentemente siguiendo los ultimos estandares, sin olvidar la compativilidad entre distintos navegadores. </p>
+			<p>El mundo de las web esta en continuo cambio por eso en ODY nos reciclamos frecuentemente siguiendo los ultimos estandares, sin olvidar la compativilidad entre distintos navegadores. </p>
 			</div>
 			</section>
 	</article>
