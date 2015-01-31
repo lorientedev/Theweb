@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>ODY Web</title>
+	<link rel="icon" href="/favicon.ico" type="image/x-icon">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize_style.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Dosis:300,400|Open+Sans:300italic,400' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Didact+Gothic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Raleway:400,500,300' rel='stylesheet' type='text/css'>
+	
+
+</head>
+
+<script language="javascript">
+ 
+var wh = window.screen.height;
+var count = 0;
+var body = window.document.getElementById("cuerpo");	
+	
+	function doscroll(){
+		count ++;
+		scroll(0,count);
+		
+		if(count <= wh){
+		setTimeout("doscroll()", 0.25);
+		}else{
+			secondarticle();
+		}
+	} 
+
+	function secondarticle(){
+
+	   var titulo2 = window.document.getElementById("title2");
+	   titulo2.style.color = "white";
+	   count=0;
+	}
+
+</script>
+<body  id="cuerpo" >
+
+<section id="main">
+	<header>
+			<h1><img src="ODY8.1.svg" /> Web Desings</h1>
+	<nav>
+			<ul>
+				<li>
+					<a href="#Enlace1" class="navButton">
+        				Inicio
+        			</a>
+				</li>
+				<li>
+					<a href="#Enlace2" class="navButton">
+        				Quienes Somos
+        			</a>
+				</li>
+				<li>
+					<a href="#Enlace3" class="navButton">
+        				Trabajos
+        			</a>
+				</li>
+				<li>
+					<a href="#Enlace4" class="navButton">
+        				Contacto
+        			</a>
+				</li>
+				
+			</ul>
+		</nav>
+
+	</header>
+
+	  
+	  <article id="articulomain">
+			<h2>Tu Web como Tú Quieres</h2>
+	  </article>
+	 <button onclick="doscroll()"></button>
+</section>
+<section id="articulos">
+	<article id="secondarticle">
+			<h2 id="title2"> Por que <img src="ODY8.1.svg" /> ?</h2>
+
+	</article>
+</section>
+<footer>
+	
+</footer>
+
+</body>
+</html>
