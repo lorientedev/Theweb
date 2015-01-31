@@ -123,6 +123,25 @@ section button a{
 	transition: color 1s;
 
 }
+
 #secondarticle #title2 img{
 	width:6.5vw;
 }
+#secondarticle section{
+	width:90vw;
+	margin-left:5vw;
+
+}
+#simplicity img, #tecnology img{
+	width:23vw;
+}
+#simplicity, #tecnology{
+	width: 23vw;
+	color:transparent;
+	margin-left:5vw;
+	display: inline-block;
+	font-family: raleway;
+	line-height: 1.5rem;
+	transition: color 2s;
+}
+

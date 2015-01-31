@@ -23,11 +23,11 @@ var count = 0;
 var body = window.document.getElementById("cuerpo");	
 	
 	function doscroll(){
-		count ++;
+		count += 2;
 		scroll(0,count);
 		
 		if(count <= wh){
-		setTimeout("doscroll()", 0.25);
+		setTimeout("doscroll()", 0.1);
 		}else{
 			secondarticle();
 		}
@@ -36,7 +36,12 @@ var body = window.document.getElementById("cuerpo");
 	function secondarticle(){
 
 	   var titulo2 = window.document.getElementById("title2");
+	   var simplicity = window.document.getElementById("simplicity");
+	   var tecnology = window.document.getElementById("tecnology");
+
 	   titulo2.style.color = "white";
+	   simplicity.style.color = "white";
+	   tecnology.style.color = "white";
 	   count=0;
 	}
 
@@ -81,9 +86,22 @@ var body = window.document.getElementById("cuerpo");
 	 <button onclick="doscroll()"></button>
 </section>
 <section id="articulos">
+		
 	<article id="secondarticle">
-			<h2 id="title2"> Por que <img src="ODY8.1.svg" /> ?</h2>
+	<h2 id="title2"> Por que <img src="ODY8.1.svg" /> ?</h2>
+			
+			<section>
+			
+			<div id="simplicity"><img src="simplicity.svg"/>
+			<br><h3>Simplicidad</h3>
+			<p>Contratando los servicios en ODY no tendra complicaciones durante la realizacion de la misma, y al finalizar el proyecto el uso de su web sera sencillo y aun asi no le dejaremos solo sino que estaremos ahi para ayudarle con lo que necesite. </p>
+			</div>
 
+			<div id="tecnology"><img src="htmlcsslogos.svg"/><br>
+			<h3>A la ultima</h3>
+			<p>El mundo de las web esta en continuo cambio por eso en ODY nos actualizamos frecuentemente siguiendo los ultimos estandares, sin olvidar la compativilidad entre distintos navegadores. </p>
+			</div>
+			</section>
 	</article>
 </section>
 <footer>
